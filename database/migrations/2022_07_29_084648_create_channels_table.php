@@ -15,11 +15,11 @@ class CreateChannelsTable extends Migration
     {
         Schema::create('channels', function (Blueprint $table) {
             $table->id();
-            $table->string("title");
-            $table->string("category");
-            $table->string("thumnails")->default("default");
-            $table->string("country");
-            $table->string("channelurl");
+            $table->string("title",256);
+            $table->string("category",256);
+            $table->string("thumnails",256)->default("default");
+            $table->string("country",256);
+            $table->string("channelurl",256);
             $table->timestamps();
         });
     }
