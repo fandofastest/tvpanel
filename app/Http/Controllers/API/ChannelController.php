@@ -29,6 +29,15 @@ class ChannelController extends Controller
         return response()->json(['channel'=>ChannelResource::collection($data)]);
     }
 
+    public function allcat()
+    {
+        // dd("test");
+        //
+        $data = Channel::all();
+        return response()->json(['channel'=>ChannelResource::collection($data)]);
+    }
+
+
     /**
      * Show the form for creating a new resource.
      *

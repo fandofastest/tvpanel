@@ -21,4 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/channelres', [ChannelController::class, 'index']);
+Route::get('/allcat', [ChannelController::class, 'allcat']);
 Route::get('/channelres/bycategory/{category}', [ChannelController::class, 'bycategory']);
