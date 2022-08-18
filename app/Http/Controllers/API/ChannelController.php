@@ -4,6 +4,7 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\ChannelResource;
+use App\Http\Resources\CategoryResource;
 use App\Models\Category;
 use App\Models\Channel;
 use Illuminate\Http\Request;
@@ -35,7 +36,7 @@ class ChannelController extends Controller
         // dd("test");
         //
         $data = Category::all();
-        return response()->json(['channel'=>ChannelResource::collection($data)]);
+        return response()->json(['category'=>CategoryResource::collection($data)]);
     }
 
 
