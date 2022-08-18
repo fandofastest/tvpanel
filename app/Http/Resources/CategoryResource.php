@@ -15,7 +15,7 @@ class CategoryResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'name' => $this->category,
+            'name' => $this->name,
             'thumnails' => url('storage/thumbnails/'.$this->thumnails),
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
